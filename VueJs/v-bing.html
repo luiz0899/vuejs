@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> vuejs !</title>
+</head>
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+      <div id="app">
+            
+            <h1> {{tituto}} </h1>
+            <img v-bind:src="'https://austingil.com/wp-content/uploads/Vue-Blog-Cover.png'" alt="">
+
+            <img :src="Imagem" alt="">
+            <!-- -- > Pode usar a abreviação tambem v-bind(:)<-- -->
+            
+      </div>
+
+    <script>
+        var app = new Vue ({
+            el: "#app",
+            data: {
+               
+                tituto: "Aula 01 - vuejs !",
+                Imagem: "https://vuegroup.org/wp-content/uploads/2020/05/Master-VUE-Logo-medium-for-A4-page-150x50-1.png",
+                
+            }
+        });
+    </script>
+
+</body>
+</html>
